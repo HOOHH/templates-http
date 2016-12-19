@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TemplatesHttp.Core
 {
-    interface IAccessor
+    public interface IAccessor
     {
+
     }
 }

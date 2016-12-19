@@ -44,11 +44,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapters\AdapteSquence.cs" />
+    <Compile Include="Adapters\AdapterSquence.cs" />
+    <Compile Include="Adapters\DeflateAdapter.cs" />
+    <Compile Include="Adapters\GzipAdapter.cs" />
+    <Compile Include="Adapters\NormalAdapter.cs" />
+    <Compile Include="Attributes\AdapterAttribute.cs" />
+    <Compile Include="Core\DynamicDictionary.cs" />
     <Compile Include="Core\IAccessor.cs" />
     <Compile Include="Core\IHttpService.cs" />
     <Compile Include="Core\IStreamAdapter.cs" />
     <Compile Include="Core\ITemplate.cs" />
+    <Compile Include="Core\ServiceContext.cs" />
+    <Compile Include="Core\ServiceCore.cs" />
+    <Compile Include="InsideTemplate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

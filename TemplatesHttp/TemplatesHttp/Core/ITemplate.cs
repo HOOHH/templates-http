@@ -1,12 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace TemplatesHttp.Core
 {
-    interface ITemplate
+    public interface ITemplate
     {
+        NameValueCollection GetHeaders();
+        NameValueCollection GetQuerys();
+        void WriteBody(Stream stream);
+        ServiceContext Context { get; }
     }
 }

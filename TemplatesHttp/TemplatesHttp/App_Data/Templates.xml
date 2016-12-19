@@ -1,8 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Template id="DemoTemplate">
-  <Major></Major>
+  <Major>
+    <Url>/targetController/TargetAction</Url>
+    <Query>
+      <Item Key="Query1" Value="Hello"/>
+      <Item Key="Query2" Value="World"/>
+    </Query>
+    <Header>
+      <Item Key="Accept-Encoding" Value="gzip"/>
+      <Item Key="ContentType" Value="application/xml"/>
+    </Header>
+    <Body>
+      <![CDATA[
+    This is a body.
+    ]]>
+    </Body>
+  </Major>
   <Adapters>
-    <Adapter id="[InternalAdapter]" squence="1"/>
-    <Adapter id="ExternalAdapter" Type="TargetNamespace.TargetType" squence="2"/>
+    <Adapter id="gzip" squence="1"/>
+    <Adapter id="normal" squence="2"/>
   </Adapters>
 </Template>
