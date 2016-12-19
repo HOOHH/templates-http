@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace TemplatesHttp.Core
 {
-    public class DynamicDictionary : DynamicObject
+    public class DynamicDictionary<T> : DynamicObject
     {
-        internal Dictionary<string, string> RefDictionary { get; set; } = new Dictionary<string, string>();
+        internal Dictionary<string, T> RefDictionary { get; set; } = new Dictionary<string, T>();
 
         public DynamicDictionary()
         {
@@ -31,10 +31,11 @@ namespace TemplatesHttp.Core
         {
             if (value is string)
             {
-                RefDictionary[binder.Name] = value.ToString();
+                RefDictionary[binder.Name] = (T)value;
                 return true;
             }
             return false;
         }
+
     }
 }

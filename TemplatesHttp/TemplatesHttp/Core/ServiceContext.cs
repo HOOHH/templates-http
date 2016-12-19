@@ -8,9 +8,9 @@ namespace TemplatesHttp.Core
 {
     public class ServiceContext
     {
-        public DynamicDictionary HeaderDictionary { get; set; } = new DynamicDictionary();
-        public DynamicDictionary BodyDictionary { get; set; } = new DynamicDictionary();
-        public DynamicDictionary QueryDictionary { get; set; } = new DynamicDictionary();
+        public DynamicDictionary<string> HeaderDictionary { get; set; } = new DynamicDictionary<string>();
+        public DynamicDictionary<object> BodyDictionary { get; set; } = new DynamicDictionary<object>();
+        public DynamicDictionary<string> QueryDictionary { get; set; } = new DynamicDictionary<string>();
 
         public dynamic Header
         {

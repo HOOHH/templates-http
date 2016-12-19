@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TemplatesHttp.Core
 {
-    public interface ITemplate
+    public interface ITemplate : ICloneable
     {
         NameValueCollection GetHeaders();
         NameValueCollection GetQuerys();

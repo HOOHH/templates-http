@@ -57,6 +57,7 @@
     <Compile Include="Core\ServiceContext.cs" />
     <Compile Include="Core\ServiceCore.cs" />
     <Compile Include="InsideTemplate.cs" />
+    <Compile Include="KeyValueItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

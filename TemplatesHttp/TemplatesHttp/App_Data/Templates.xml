@@ -12,7 +12,8 @@
     </Header>
     <Body>
       <![CDATA[
-    This is a body.
+      [$.AccountIds]->[<Account id="[$]"> </Account>]
+      [#.SinglePlaceHolder]
     ]]>
     </Body>
   </Major>
@@ -21,3 +22,8 @@
     <Adapter id="normal" squence="2"/>
   </Adapters>
 </Template>
+
+<!--Protocol for sequence-->
+<!--\[\$\.([\w]+)\]->\[(.*)]-->
+<!--Protocol for single-->
+<!--\[\#\.(\w+)\]-->

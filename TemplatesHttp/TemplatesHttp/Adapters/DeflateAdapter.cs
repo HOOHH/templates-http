@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,8 @@ namespace TemplatesHttp.Adapters
     {
         public Stream Adapt(Stream stream)
         {
-            throw new NotImplementedException();
+            Stream target = new DeflateStream(stream, CompressionMode.Decompress);
+            return target;
         }
     }
 }

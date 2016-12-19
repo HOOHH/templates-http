@@ -12,8 +12,8 @@ namespace TemplatesHttp.Core
     /// </summary>
     public interface IHttpService
     {
-        string QueryString(ITemplate template, ServiceContext svrContext);
+        string QueryString(ITemplate template);
 
-        Stream QueryStream(ITemplate template, ServiceContext svrContext);
+        Stream QueryStream(ITemplate template);
     }
 }
