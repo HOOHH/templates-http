@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Template id="DemoTemplate">
+  <Major></Major>
+  <Adapters>
+    <Adapter id="[InternalAdapter]" squence="1"/>
+    <Adapter id="ExternalAdapter" Type="TargetNamespace.TargetType" squence="2"/>
+  </Adapters>
+</Template>
