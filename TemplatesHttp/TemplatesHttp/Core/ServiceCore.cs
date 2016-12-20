@@ -20,7 +20,6 @@ namespace TemplatesHttp.Core
         {
             throw new NotImplementedException();
         }
-
         /// <summary>
         /// If you call this function the Accessor will be replace.
         /// </summary>
@@ -47,7 +46,7 @@ namespace TemplatesHttp.Core
 
         static ServiceCore()
         {
-            
+
         }
 
     }
