@@ -8,6 +8,9 @@ using TemplatesHttp.Core;
 
 namespace TemplatesHttp.Adapters
 {
+    /// <summary>
+    ///Adapter squence as Queue as that could be used in a template context
+    /// </summary>
     public sealed class AdapterSquence : Queue<IStreamAdapter>, IStreamAdapter
     {
         public Stream Adapt(Stream stream)

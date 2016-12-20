@@ -2,6 +2,7 @@
 <Template id="DemoTemplate">
   <Major>
     <Url>/targetController/TargetAction</Url>
+    <Method>POST</Method>
     <Query>
       <Item Key="Query1" Value="Hello"/>
       <Item Key="Query2" Value="World"/>

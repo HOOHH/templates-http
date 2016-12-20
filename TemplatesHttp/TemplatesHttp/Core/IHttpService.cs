@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace TemplatesHttp.Core
 {
     /// <summary>
-    /// If you wanted using the NetworkStream Please do not attach any adapter.
+    /// An interface finget that it can access the real or mock up http service
     /// </summary>
     public interface IHttpService
     {
