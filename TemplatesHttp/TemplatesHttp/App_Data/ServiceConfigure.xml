@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Services>
+  <Service Name ="Svr1" Value="https://www.baidu.com"/>
+  <Service Name="Svr2" Value="http://www.sina.com.cn"/>
+</Services>
