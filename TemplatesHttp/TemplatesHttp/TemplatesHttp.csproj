@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapters\AdapterFactory.cs" />
     <Compile Include="Adapters\AdapterSquence.cs" />
     <Compile Include="Adapters\DeflateAdapter.cs" />
     <Compile Include="Adapters\GzipAdapter.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="InsideTemplate.cs" />
     <Compile Include="KeyValueItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceImpl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -66,6 +68,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="App_Data\ServiceConfigure.xml" />
     <Content Include="App_Data\Templates.xml" />
     <Content Include="log.xml" />
   </ItemGroup>

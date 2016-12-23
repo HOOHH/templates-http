@@ -104,5 +104,7 @@ namespace TemplatesHttp
                 template.StaticQuery = StaticQuery.Clone() as KeyValueItem[];
             return template;
         }
+
+        public string[] Adapters { get; set; }
     }
 }

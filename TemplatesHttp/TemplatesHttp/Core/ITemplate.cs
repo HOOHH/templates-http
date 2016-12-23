@@ -14,5 +14,6 @@ namespace TemplatesHttp.Core
         NameValueCollection GetQuerys();
         void WriteBody(Stream stream);
         ServiceContext Context { get; }
+        string[] Adapters { get; }
     }
 }

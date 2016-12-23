@@ -22,7 +22,11 @@ namespace TemplatesHttp.Core
 
         public static IHttpService GetService(string svrname)
         {
-            throw new NotImplementedException();
+            if (ServicePool.ContainsKey(svrname))
+            {
+                return ServicePool[svrname];
+            }
+            return null;
         }
         /// <summary>
         /// If you call this function the Accessor will be replace.
@@ -56,6 +60,9 @@ namespace TemplatesHttp.Core
             ModuleLogger = LogManager.GetLogger(typeof(ServiceCore));
             ModuleLogger.Info("Logger On Line");
         }
+
+
+        internal static Dictionary<string, IHttpService> ServicePool { get; set; } = new Dictionary<string, IHttpService>();
 
     }
 }
